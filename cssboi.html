@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUST-GO</title>
+    <link rel="stylesheet" href="stephan.css">
+</head>
+<body>
+    <header>
+        <h1>NUST-GO</h1>
+    </header>
+    <main>
+        <form id="pickupForm">
+            <h2>Pickup Details</h2>
+            <label for="pickupLocation">Pickup Location:</label>
+            <input type="text" id="pickupLocation" name="pickupLocation" required>
+            <label for="pickupTime">Pickup Time:</label>
+            <input type="datetime-local" id="pickupTime" name="pickupTime" required>
+            <button type="submit">Request Pickup</button>
+        </form>
+        <div id="pickupResponse"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 NUST-GO. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
