@@ -1,7 +1,6 @@
 import ballerina/io;
-import ballerina/random;
+//import ballerina/random;
 
-string greeting = "Hello";
 
 public function main() {
     
@@ -22,7 +21,17 @@ public function main() {
 
     //io:println(computeFactorsOfRandomNum(10,61));
 
-    io:println("Hello, world");
+    //io:println("Hello, world");
+
+    int[] list= [1,2,3,4];
+    int|() result = findIndex(list, 2);
+
+    if result == (){
+        io:println("Element not found!");
+    }else{
+        io:println("Element found at index:", result);
+    }
+
 
 }
     function foo(boolean flag){
@@ -48,37 +57,50 @@ function checkEvenOrOdd(int z){
     }
 }
 
-function computeFactorsOfRandomNum(int min, int max) returns string{
+//function computeFactorsOfRandomNum(int min, int max) returns string{
 
-     int range = max-min;
+     //int range = max-min;
 
-     if range <=0{
-        return "your range is invalid!";
-     }else{
+     ///if range <=0{
+      //  return "your range is invalid!";
+    // }else{
 
-        int ranNum = min + random:nextInt(max-min);
-        string myString="Owa kutha onumber:"+ ranNum.toString();
+       // int ranNum = min + random:nextInt(max-min);
+       // string myString="Owa kutha onumber:"+ ranNum.toString();
 
-     return myString; 
-     }
+     //return myString; 
+    // }
      //io:print("Owa kutha onumber:", ranNum);
 
      //string myString="Owa kutha onumber:"+ ranNum.toString();
 
      //return myString; 
 
-}
+//}
 
 
-function computeFFactorsOfRandomNum(){
+//function computeFFactorsOfRandomNum(){
 
-    int min=10;
-    int max=61;
+   // int min=10;
+   // int max=61;
 
-     int ranNum = min+ random:nextInt(maxstr);
+     //int ranNum = min+ random:nextInt(maxstr);
      //io:print("Owa kutha onumber:", ranNum);
 
 
+//}
 
+function findIndex(int[] nums,int target) returns int|(){
+
+    foreach int i in 0 ..<nums.length(){
+        
+        if nums[i]==target{
+            return i;
+        }
+
+    }
+    return ();    
 }
+
+
 
