@@ -1,0 +1,111 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #e4e4e4;
+  color: #333;
+  padding: 20px;
+}
+
+
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  margin-bottom: 8px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+
+#about {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+  flex-shrink: 0;
+}
+
+#about p {
+  flex: 1;
+}
+
+#darkMode{
+  background-color: #333;
+  color: #f4f4f4;
+  border-radius: 10px;
+  width: 80psx;
+  height: 45px;
+  font-family: Arial, sans-serif;
+  padding: 4px;
+  margin: 10px;
+}
+
+.dark-mode{
+  background-color: #ff0000;
+  color: #ccc;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+#contact h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+#hobbies h2{
+  margin-bottom: 10px;
+  color: #444;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    width: 250px;
+  }
+
+}
+
+
+
+

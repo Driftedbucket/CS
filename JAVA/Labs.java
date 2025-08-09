@@ -1350,7 +1350,7 @@ public class Labs{
         }
     }
 }*/
-
+/* 
 import java.util.ArrayList;
 
 public class Labs{
@@ -1456,3 +1456,29 @@ public class Labs{
 
     }
 }
+*/
+public class Labs{
+
+    public static void main(String[] args){
+
+        int[] nums = {2,11,7,9};
+        System.out.println(twoSum(nums, 9));
+    }
+
+    public static int[] twoSum(int[] nums, int target) {
+
+        int[] output = new int[2];
+
+        for(int i=0;i<nums.length;i++){
+            
+                if(nums[i]+nums[i+1]==target){
+                    output[0]=i;
+                    output[1]=i++;
+                }
+            
+            
+        }
+        return output;
+    }
+}
+
