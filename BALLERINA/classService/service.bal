@@ -31,6 +31,10 @@ public final table<CovidEntry> key(iso_code) covidTable = table [
     {iso_code: "US", country: "USA", cases: 69808350, deaths: 880976, recovered: 43892277, active: 25035097}
 ];
 
+type ConflictingIsoCodesError record {|
+    
+|};
+
 service /classService/status on new http:Listener(9000) {
 
     resource function get countries() returns CovidEntry[] {
